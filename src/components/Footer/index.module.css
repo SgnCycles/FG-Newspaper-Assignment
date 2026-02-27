@@ -26,13 +26,28 @@
   justify-content: start;
 }
 
+.footerSectionTwo, .footerSectionThree {
+  place-self: center;
+  align-self: start;
+}
+
 .footerCompanyTitle h2{
   font-size: 1.8rem;
 }
 
-.footerNavMenu {
+.footerHeaderTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.footerNavMenu, .footerAboutSection {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  text-align: left;
+  padding-left: 0;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .footerBottom {

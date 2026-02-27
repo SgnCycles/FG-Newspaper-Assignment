@@ -18,14 +18,15 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.footerSectionTwo}>
-            <h3>Get News</h3>
+            <h3 className={styles.footerHeaderTitle}>Get News</h3>
             <Navigation className={styles.footerNavMenu}/>
           </div>
           <div className={styles.footerSectionThree}>
-            <h3>Company</h3>
-            <About />
+            <h3 className={styles.footerHeaderTitle}>Company</h3>
+            <About className={styles.footerAboutSection}/>
           </div>
           <div className={styles.footerSectionFour}>
+            <h3 className={styles.footerHeaderTitle}>Subscribe</h3>
             <Subscribe />
           </div>
         </div>

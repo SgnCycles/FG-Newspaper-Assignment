@@ -1,10 +1,23 @@
+.subscribeForm {
+  margin-top: 20px;
+}
+
 .subscribeInput, .subscribeSubmit {
   width: 80%;
+  padding: 5px 0;
+  margin-bottom: 10px;
 }
 
 .subscribeSubmit {
   border: 1px solid white;
   background-color: #525152;
   color: white;
-  margin-top: 20px;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.subscribeSubmit:hover {
+  border: 1px solid #525152;
+  background-color: white;
+  color: #525152;
 }
