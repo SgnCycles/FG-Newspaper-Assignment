@@ -8,8 +8,8 @@
 
 .legalMenuList {
   display: flex;
-  justify-content: space-around;
-  width: 50%;
+  justify-content: space-between;
+  width: 30%;
   padding-left: 0;
 }
 
