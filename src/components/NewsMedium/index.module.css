@@ -1,0 +1,17 @@
+.newsMedium {
+  border-top: 1px solid black;
+  padding: 20px 10px;
+
+}
+
+.category {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.image img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+}

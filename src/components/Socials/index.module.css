@@ -1,0 +1,11 @@
+.socialsContainer {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socialsContainer a img {
+  height: 20px;
+  width: auto;
+}

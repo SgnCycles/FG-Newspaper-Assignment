@@ -1,0 +1,21 @@
+.contactNumberContainer {
+  border: 1px solid black;
+  width: 145px;
+  padding: 3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4px;
+}
+
+.contactIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactNumberContainer a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}

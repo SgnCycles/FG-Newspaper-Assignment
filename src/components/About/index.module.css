@@ -1,0 +1,8 @@
+.aboutNavMenuItem {
+ list-style-type: none;
+}
+
+.aboutNavMenuItem a {
+ text-decoration: none;
+ color: white;
+}

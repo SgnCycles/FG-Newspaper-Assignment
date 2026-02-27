@@ -1,0 +1,10 @@
+.subscribeInput, .subscribeSubmit {
+  width: 80%;
+}
+
+.subscribeSubmit {
+  border: 1px solid white;
+  background-color: #525152;
+  color: white;
+  margin-top: 20px;
+}

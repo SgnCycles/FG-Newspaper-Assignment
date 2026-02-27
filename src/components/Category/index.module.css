@@ -1,0 +1,20 @@
+.categorySection {
+ min-height: auto;
+}
+
+.articleWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.categoryNews {
+  border-top: none;
+}
+
+.categorySection h2 {
+  font-size: 2rem;
+  padding-left: 15px;
+  margin: 0;
+  letter-spacing: 3px;
+}

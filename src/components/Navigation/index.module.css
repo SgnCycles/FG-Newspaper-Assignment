@@ -1,0 +1,26 @@
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex: 1; */
+  width: 70%;
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.navMenuList {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navMenuItem {
+  list-style-type: none;
+}
+
+.navMenuItem a{
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+}

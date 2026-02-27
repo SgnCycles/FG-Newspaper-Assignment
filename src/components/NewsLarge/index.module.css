@@ -1,0 +1,17 @@
+.newsLarge {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+}
+
+.heading {
+  font-size: 2rem;
+}

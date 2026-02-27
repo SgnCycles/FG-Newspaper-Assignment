@@ -1,0 +1,42 @@
+.footer {
+  background-color: #525152;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footerSectionOne, .footerSectionTwo, .footerSectionThree, .footerSectionFour {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: start;
+}
+
+.footerCompanyTitle h2{
+  font-size: 1.8rem;
+}
+
+.footerNavMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
