@@ -43,3 +43,22 @@
   align-items: space-around;
   padding-right: 5px;
 }
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .heroGrid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+  .leftColumn {
+    order: 3;
+  }
+
+  .middleColumn {
+    order: 1;
+  }
+
+  .rightColumn {
+    order: 2;
+  }
+}

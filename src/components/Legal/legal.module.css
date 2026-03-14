@@ -22,3 +22,15 @@
   text-decoration: none;
   color: white;
 }
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .legalNavWrapper {
+    width: 100%;
+  }
+
+  .legalMenuList {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+}

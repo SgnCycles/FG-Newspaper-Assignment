@@ -1,7 +1,6 @@
-import styles from "./index.module.css";
+import styles from "./footer.module.css";
 import Socials from "../Socials";
 import Company from "../Company";
-import Navigation from "../Navigation";
 import About from "../About"
 import Legal from "../Legal"
 import Subscribe from "../Subscribe";
@@ -18,14 +17,10 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.footerSectionTwo}>
-            <h3 className={styles.footerHeaderTitle}>Get News</h3>
-            <Navigation className={styles.footerNavMenu}/>
-          </div>
-          <div className={styles.footerSectionThree}>
             <h3 className={styles.footerHeaderTitle}>Company</h3>
             <About className={styles.footerAboutSection}/>
           </div>
-          <div className={styles.footerSectionFour}>
+          <div className={styles.footerSectionThree}>
             <h3 className={styles.footerHeaderTitle}>Subscribe</h3>
             <Subscribe />
           </div>

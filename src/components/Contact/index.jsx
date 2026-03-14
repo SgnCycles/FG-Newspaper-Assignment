@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./contact.module.css";
 import { getIconImageUrl } from "../../utils/functions.js";
 import { phoneContact } from "../../data/contacts.js";
 

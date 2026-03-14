@@ -1,0 +1,29 @@
+.selectedArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.backButton {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .selectedArticle {
+    padding: 20px;
+  }
+}

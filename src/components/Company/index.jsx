@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./company.module.css";
 
 const CompanyName = ({className}) => {
   return(

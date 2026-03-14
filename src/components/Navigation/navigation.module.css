@@ -10,16 +10,32 @@
 
 .navMenuList {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
 .navMenuItem {
   list-style-type: none;
+  cursor: pointer;
 }
 
 .navMenuItem a{
   text-decoration: none;
   color: white;
   letter-spacing: 2px;
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .navMenuList {
+    display: none;
+  }
+
+  .navItem {
+    padding: 8px;
+  }
+
+  .navMenuList.active {
+    display: flex;
+    flex-direction: column;
+  }
 }

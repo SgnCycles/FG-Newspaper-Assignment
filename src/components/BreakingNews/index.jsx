@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./breakingNews.module.css";
 
 const BreakingNews = ({breakingNewsSection}) => {
   return (

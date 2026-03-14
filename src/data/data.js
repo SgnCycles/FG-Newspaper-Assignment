@@ -34,3 +34,40 @@ export const articles = [
     new Article("Small Islands lead the way", "Cook Islands Bans Single-Use Plastic Bags", `RAROTONGA, COOK ISLANDS - The Cook Islands has become the latest Pacific nation to ban single-use plastic bags in an effort to reduce plastic pollution and protect the environment. The ban, which took effect on January 1, 2023, prohibits the import, sale, and distribution of single-use plastic bags throughout the country. The Cook Islands is home to some of the most beautiful coral reefs and marine life in the world, but plastic pollution is a major threat to these ecosystems. Single-use plastic bags are a particular problem because they can easily end up in the ocean, where they can harm marine animals and damage coral reefs. The Cook Islands government has worked with businesses and communities to develop a plan to implement the ban. Retailers are now required to provide reusable bags or biodegradable alternatives to customers. The government has also launched a public education campaign to raise awareness about the harmful effects of plastic pollution. The Cook Islands is one of a growing number of countries around the world that are taking action to reduce plastic pollution. In recent years, several other Pacific nations, including Fiji, Samoa, and Vanuatu, have banned single-use plastic bags. The Cook Islands' ban on single-use plastic bags is a welcome step towards reducing plastic pollution and protecting the environment. The government's commitment to this issue is a positive example for other countries in the region and around the world.`, "cook.jpeg", "world"),
     new Article("Bright Lights", "Local Theater Group to Debut New Play", `The Smith Street Theater Group is excited to announce the upcoming debut of their new play, "A Day in the Life" The play, written by local playwright Bob Graham, tells the story of Smith St. "We are thrilled to be able to bring this new play to our community," said John McIntyre. "It's a powerful and moving story that we think will resonate with audiences of all ages." The play will be performed at the Melbourne Theater from Febuary 15th to April 2nd. Tickets are on sale now and can be purchased online or at the box office. For more information, please visit the theater group's website at www.smithstreettheater.au`, "theatre.jpeg", "entertainment")
 ] 
+
+export const newsArray = Array.from(articles);
+
+const randomArticle = (articleArray) => {
+  const randomIndex = Math.floor(Math.random() * articleArray.length);
+  let article = articleArray[randomIndex];
+  articleArray.splice(randomIndex, 1);
+  return article;
+};
+
+export const newsCategories = ['Sport', 'Sweden', 'Crime', 'World', 'Entertainment'];
+
+export const normalizedCategories = newsCategories.map(category => category.toLowerCase());
+
+export const mainArticle = randomArticle(newsArray);
+
+export const noSportsArticles = newsArray.filter(article => article.category !== 'sport');
+
+export const recentNews = [randomArticle(noSportsArticles), randomArticle(noSportsArticles), randomArticle(noSportsArticles), randomArticle(noSportsArticles)];
+  
+export const sportsArticles = newsArray.filter(article => article.category === 'sport');
+
+export const heroSportNews = [randomArticle(sportsArticles), randomArticle(sportsArticles)];
+
+export const categorySection = normalizedCategories.map(category => {
+const categoryArticles = newsArray.filter(article => article.category === category);
+const categorySectionArticles = categoryArticles.slice(0, 3);
+return {category, articles: categorySectionArticles};
+});
+
+export const breakingNewsSection = newsArray.splice(0, 3);
+
+const categoryNewsArticles = Array.from(articles);
+
+export const getCategoryArticles = selectedCategory => {
+    return categoryNewsArticles.filter(article => article.category.toLowerCase() === selectedCategory.toLowerCase())
+}

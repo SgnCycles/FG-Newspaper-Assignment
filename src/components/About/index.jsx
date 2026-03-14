@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./about.module.css";
 import { aboutMenu } from '../../data/navmenu.js'
 
 const footerAboutMenu = ({className}) => {

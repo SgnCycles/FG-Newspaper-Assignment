@@ -1,8 +1,8 @@
-import styles from './index.module.css';
+import styles from './hamburger.module.css';
 
-const Hamburger = () => {
+const Hamburger = ({showMobileMenu}) => {
   return (
-    <button className={styles.hamburger} aria-label="Mobile Menu button">
+    <button className={styles.hamburger} aria-label="Mobile Menu button" onClick={showMobileMenu}>
       <span></span><span></span><span></span>
     </button>
   )

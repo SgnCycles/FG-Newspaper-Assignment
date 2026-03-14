@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./subscribe.module.css";
 
 const Subscribe = ({className}) => {
   return (

@@ -1,14 +1,24 @@
-import style from './index.module.css'
+import styles from './newsMedium.module.css'
 import { getImageUrl } from '../../utils/functions.js'
 
-const NewsMedium = ({image, headline, deck, className}) => {
+const NewsMedium = ({article, updateArticle3}) => {
+
+  if (!article) return null; 
+  // if there's no article, render nothing instead of crashing
+
+  let {headline, deck, image} = article
+
+  const handleClick = () => {
+    updateArticle3(article)
+  }
+
   return (
-    <article className={`${style.newsMedium} ${className || ''}`}>
-      <div className={style.image}>
+    <article onClick={handleClick} className={styles.newsMedium}>
+      <div className={styles.image}>
         <img src={getImageUrl(image)} height="100px" width="auto"/>
       </div>
-      <h4 className={style.heading}>{headline}</h4>
-      <div className={style.deck}>{deck}</div>
+      <h4 className={styles.heading}>{headline}</h4>
+      <div className={styles.deck}>{deck}</div>
     </article>
   )
 }

@@ -1,21 +1,21 @@
-import style from './index.module.css'
+import style from './hero.module.css'
 import NewsLarge from '../NewsLarge'
 import NewsMedium from '../NewsMedium'
 import NewsSmall from '../NewsSmall'
 
-const Hero = ({mainNewsArticle, recentNews, heroSportNews}) => {
+const Hero = ({mainNewsArticle, recentNews, heroSportNews, updateArticle2}) => {
   return (
     <div className={style.heroSection}>
       <div className={style.heroGrid}>
         <div className={style.leftColumn}>
           <div className={style.heroGridHeader}>Recent News</div>
-          {recentNews.map((article, index) => <NewsSmall key={index} {...article}/>)}
+          {recentNews.map((article, index) => <NewsSmall key={index} article={article} updateArticle3={updateArticle2}/>)}
         </div>
         <div className={style.middleColumn}>
-          <NewsLarge {...mainNewsArticle}/>
+          <NewsLarge article={mainNewsArticle} updateArticle3={updateArticle2}/>
         </div>
         <div className={style.rightColumn}>
-          {heroSportNews.map((article, index) => <NewsMedium key={index} {...article}/>)}
+          {heroSportNews.map((article, index) => <NewsMedium key={index} article={article} updateArticle3={updateArticle2} />)}
         </div>
       </div>
     </div>

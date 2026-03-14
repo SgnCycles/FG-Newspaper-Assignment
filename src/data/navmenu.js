@@ -1,29 +1,4 @@
-export const navMenu = [
-  {
-    name: 'Home',
-    link: '/',
-  },
-  {
-    name: 'World',
-    link: '#world'
-  },
-  {
-    name: 'Sweden',
-    link: '#sweden'
-  },
-  {
-    name: 'Sport',
-    link: '#sport'
-  },
-  {
-    name: 'Entertainment',
-    link: '#entertainment'
-  },
-  {
-    name: 'Crime',
-    link: '#crime'
-  },
-];
+export const navMenu = ['Home', 'World', 'Sweden', 'Sport', 'Entertainment', 'Crime'];
 
 export const aboutMenu = [
   {

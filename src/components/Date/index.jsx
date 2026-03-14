@@ -1,4 +1,4 @@
-import styles from './index.module.css';
+import styles from './date.module.css';
 import getCurrentDate from '../../utils/currentDate.js';
 
 const CurrentDate = () => {

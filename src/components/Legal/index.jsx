@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./legal.module.css";
 import { legalMenu } from '../../data/navmenu.js'
 
 const legalNavMenu = ({className}) => {

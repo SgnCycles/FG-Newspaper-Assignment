@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./topbar.module.css";
 import Socials from "../Socials";
 import Contact from "../Contact";
 import Company from "../Company"

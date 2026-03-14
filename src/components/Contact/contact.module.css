@@ -19,3 +19,10 @@
   color: black;
   letter-spacing: 2px;
 }
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .contactNumberContainer {
+    order: 3;
+  }
+  
+}

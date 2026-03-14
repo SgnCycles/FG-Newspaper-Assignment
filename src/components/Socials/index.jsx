@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./socials.module.css";
 import { socialIcons } from "../../data/contacts.js";
 import { getIconImageUrl } from "../../utils/functions.js";
 

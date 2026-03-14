@@ -1,11 +1,18 @@
-import style from './index.module.css'
+import styles from './newsSmall.module.css'
 
-const NewsSmall = ({headline, deck, category}) => {
+const NewsSmall = ({article, updateArticle3}) => {
+
+  let {headline, deck, category} = article
+
+  const handleClick = () => {
+    updateArticle3(article)
+  }
+  
   return (
-    <article className={style.newsSmall}>
-      <h4 className={style.heading}>{headline}</h4>
-      <div className={style.deck}>{deck}</div>
-      <div className={style.category}>{category}</div>
+    <article onClick={handleClick} className={styles.newsSmall}>
+      <h4 className={styles.heading}>{headline}</h4>
+      <div className={styles.deck}>{deck}</div>
+      <div className={styles.category}>{category}</div>
     </article>
   )
 }

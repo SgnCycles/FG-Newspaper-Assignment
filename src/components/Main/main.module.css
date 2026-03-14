@@ -4,3 +4,10 @@
   flex-grow: 1;
   padding: 15px;
 }
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .mainSection {
+    padding: 0;
+}
+
+}
